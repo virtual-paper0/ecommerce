@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            width: 300px;
+            padding: 16px;
+            background-color: white;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+    <title>Account Delete</title>
+</head>
+<body>
+    <nav>DELETE ACCOUNT
+        <div class="nav-items"> <a href="product.html"><b >Home</b></a> </div>
+    </nav>
+    <div class="form-container">
+        <form action="rdelete.php" method="get">
+            <input type="text" name="email" placeholder="Email">
+            <button type="submit">Delete Account</button>
+        </form>
+    </div>
+</body>
+</html>

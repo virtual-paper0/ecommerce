@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virgo Family - Trade</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1c40f;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .form-section {
+            background-color: #ffdd00;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .form-item {
+            margin-bottom: 15px;
+        }
+        .form-label {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .form-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">HomeMade</div>
+        <div class="nav-items"> <a href="product.html"><b >Home</b></a> </div>
+    </nav>
+    <div>
+    
+        <form class="container" action="trade.php" method="post">
+            <div class="form-item">
+                <label class="form-label" for="name">Name</label>
+                <input class="form-input" type="text" id="name" name="name" required>
+            </div>
+            <div class="form-item">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-input" type="email" id="email" name="email" required>
+            </div>
+            <div class="form-item">
+                <label class="form-label" for="address">Delivery Address</label>
+                <textarea class="form-input" id="address" name="address" rows="3" required></textarea>
+            </div>
+            <div class="form-item">
+                <label class="form-label" for="product">Select Product</label>
+                <select class="form-input" id="product" name="product" required>
+                    <option value="">-- Select --</option>
+                    <option value="handcrafted_candles">Handcrafted Candles - $10</option>
+                    <option value="diy_herbal_soap">DIY Herbal Soap - $15</option>
+                    <option value="homemade_jam">Homemade Jam - $5</option>
+                    <option value="beeswax_wraps">Beeswax Wraps - $35</option>
+                    <option value="knitted_scarves">Knitted Scarves - $29</option>
+                    <option value="wooden_cutting_boards">Wooden Cutting Boards - $9</option>
+                </select>
+            </div>
+            <div class="form-item">
+                <button class="form-button" type="submit">Submit Order</button>
+            </div>
+        </form>
+    </div>
+   
+</body>
+</html>
